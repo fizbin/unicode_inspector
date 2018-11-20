@@ -3,3 +3,6 @@ unidebug
 unidebug.pem
 unidebug.zip
 *~
+js/get_block.js
+js/[A-Z]*.js
+unidata
