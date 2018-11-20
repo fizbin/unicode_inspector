@@ -1,0 +1,113 @@
+@import url("block_hl.css");
+
+.popup #openButton {
+    display: initial;
+}
+
+.standalone #openButton {
+    display: none;
+}
+
+.standalone #diagholder {
+    font-size: 14px;
+}
+
+div#diagholder {
+    min-width: 40em;
+}
+
+#help {
+    display: none;
+}
+
+#hideHelpButton {
+    display: none;
+}
+
+.help #help {
+    display: initial;
+}
+
+.help #hideHelpButton {
+    display: initial;
+}
+
+.help #showHelpButton {
+    display: none;
+}
+
+.hiddenButton {
+    visibility: hidden;
+}
+
+.showIB64UTF8 #IB64UTF8 {
+    visibility: initial;
+}
+.showIB64UTF16 #IB64UTF16 {
+    visibility: initial;
+}
+.showIUTF8AS88591 #IUTF8AS88591 {
+    visibility: initial;
+}
+.showIUTF8ASWIN1252 #IUTF8ASWIN1252 {
+    visibility: initial;
+}
+
+.showIUTF8AS88591 .b64Buttons {
+    display: none;
+}
+.showIUTF8ASWIN1252 .b64Buttons {
+    display: none;
+}
+.interpretButtons {
+    display: none;
+}
+.showIUTF8AS88591 .interpretButtons {
+    display: initial;
+}
+.showIUTF8ASWIN1252 .interpretButtons {
+    display: initial;
+}
+
+div.diagnostic {
+    display: inline-block;
+    font-family: monospace;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000;
+    min-height: 1em;
+    /* overflow-x: hidden;
+    overflow-y: visible; */
+}
+div.diagnostic span.diagnostic {
+    min-width: 1ch;
+    max-width: 2ch;
+    display: inline-block;
+/*    position: relative; */
+    white-space: pre;
+}
+div.diagnostic span.diagnostic:hover {
+    background:#FAA;
+}
+.errors {
+    color: red;
+}
+.haystack {
+    width: 100%;
+    font-family: monospace;
+}
+div.diagnostic span.diagnostic .tooltiptext {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 5px;
+    border-radius: 6px;
+    position: absolute;
+    top: 1.3em;
+    z-index: 1;
+    white-space: initial;
+    visibility: hidden;
+}
+div.diagnostic span.diagnostic:hover .tooltiptext {
+    visibility: initial;
+}

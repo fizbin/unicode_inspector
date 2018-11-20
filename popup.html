@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Unicode String diagnosis</title>
+    <link rel="stylesheet" type="text/css" href="popup.css">
+    <link rel="stylesheet" type="text/css" href="block_hl.css">
+    <script type="text/javascript" src="js/wtf-8.js"></script>
+    <script type="text/javascript" src="js/util.js"></script>
+    <script type="text/javascript" src="js/popup.js"></script>
+  </head>
+  <body class="standalone">
+    <div id="diagholder" style="min-height: 3em">
+      <div id="diagevents"><div id="diagnostic" class="diagnostic"></div></div>
+      <div id="diagsummary"></div>
+    </div>
+    <p class="errors" id="errors"></p>
+    <p>
+      <label for="haystack">Raw string:</label><br>
+      <textarea id="haystack" class="haystack" rows="1"></textarea><br>
+    </p>
+    <div class="b64Buttons">
+      <button id="IB64UTF8" class="hiddenButton">Interpret as Base64 UTF8</button>
+      <button id="IB64UTF16" class="hiddenButton">Interpret as Base64 UTF16LE</button>
+    </div>
+    <div class="interpretButtons">
+      <button id="IUTF8AS88591" class="hiddenButton">Fix UTF-8 read as ISO-Latin-1</button>
+      <button id="IUTF8ASWIN1252" class="hiddenButton">Fix UTF-8 read as Windows-1252</button>
+    </div>
+    <p>
+      <label for="haystackUnicode">Unicode codepoints:</label><br>
+      <textarea id="haystackUnicode" class="haystack" rows="5"></textarea>
+    </p>
+    <p>
+      <label for="haystackUTF8">UTF8 bytes:</label>
+      <label><input type="checkbox" id="base64_utf8">Base64</label><br>
+      <textarea id="haystackUTF8" class="haystack" rows="2"></textarea>
+    </p>
+    <p>
+      <label for="haystackUTF16">UTF16-LE bytes:</label>
+      <label><input type="checkbox" id="base64_utf16">Base64</label><br>
+      <textarea id="haystackUTF16" class="haystack" rows="2"></textarea>
+    </p>
+    <p>
+      <label for="haystackCode">Code:</label>
+      <select id="codeType">
+        <option value="json">JSON</option>
+        <option value="c16">C/C++ wchar_t* (UTF-16)</option>
+        <option value="c8">C/C++ char_t* (UTF-8)</option>
+        <option value="python">Python</option>
+        <option value="go">Go</option>
+        <option value="haskell">Haskell</option>
+        <option value="rust">Rust</option>
+        <option value="uri">URI percent-escaped</option>
+        <option value="html">HTML (named entities from HTML 4)</option>
+        <option value="xml">XML</option>
+      </select><br>
+      <textarea id="haystackCode" class="haystack" rows="2"></textarea>
+    </p>
+    <p>
+      <button id="openButton">Open in tab</button>
+      <button id="prefsButton">Preferences</button>
+      <button id="showHelpButton">Show Usage</button>
+      <button id="hideHelpButton">Hide Usage</button>
+    </p>
+    <div id="help">
+      <p>
+        Basic usage: highlight text on a page, then click the toolbar
+        button (<img src="icons/unidecode16.png">)
+      </p>
+      <p>
+        When the toolbar icon is pressed, it will load with the
+        highlighted text in the "Raw String" text area. The diagnostic
+        area at the top shows the same string, but with each unicode
+        code point expanded on its own. Hovering over individual
+        characters in the diagnostic area will show you the unicode
+        code point, and double clicking on a character will take you
+        to a page about the code point.
+      </p>
+      <p>
+        Modifying any of the text areas will affect all the other text
+        areas. The "Unicode code points" text area only cares about
+        text of the form <tt>U+HHHH</tt> and ignores all other text
+        (so you can, for example, paste <tt>U+1F63B</tt> into the
+        middle of a description to add a "Smiling cat with
+        Heart-Shaped Eyes" to the raw string).  The "UTF" text areas
+        do not care about whitespace, but do care about all other
+        text. The "Code" area must decode to a string for most languages
+        (i.e. with quote marks). In general, it accepts the full string
+        format of the given language even if the output is a bit limited.
+        One exception is that the python named character escape
+        (<tt>\N{NAME}</tt>) is currently not accepted.
+      </p>
+    </div>
+  </body>
+</html>

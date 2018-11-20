@@ -1,0 +1,8 @@
+All files in this extension with the exception of the file js/wtf-8.js are
+governed by the copyright and license set forth in LICENSE.txt.
+
+The file js/wtf-8.js is
+  Copyright Mathias Bynens <https://mathiasbynens.be/>
+and is subject to the same license terms, though people wishing to
+incorporate that code into other projects should consult
+https://mths.be/wtf8 for the latest version.

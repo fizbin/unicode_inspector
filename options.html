@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Options for Unicode Inspector</title>
+    <script type="text/javascript" src="js/wtf-8.js"></script>
+    <script type="text/javascript" src="js/util.js"></script>
+    <script type="text/javascript" src="js/options.js"></script>
+  </head>
+  <body>
+    <p>
+      <label for="cpInfoURL">Double-click on diagnostic bar opens:</label>
+      <input type="text" id="cpInfoURL" size="50">
+      <button id="cpInfoURLTest">Test</button>
+    </p>
+    <p>
+      The following replacement text is available:
+    </p>
+    <ul>
+      <li><tt>{cp}</tt> - the codepoint in four to six digits of
+        hexadecimal (this is probably what you want)</li>
+      <li><tt>{cpShort}</tt> - the codepoint in hexadecimal</li>
+      <li><tt>{cpDecimal}</tt> - the codepoint in decimal</li>
+      <li><tt>{utf8}</tt> - the codepoint in percent-encoded utf8</li>
+      <li><tt>{cp.u}</tt> - the same value as <tt>{cp}</tt>, but upper case</li>
+      <li><tt>{cpShort.u}</tt> - the same value as <tt>{cpShort}</tt>, but upper case</li>
+    </ul>
+    <p>
+      <label><input type="checkbox" id="ContextMenu">Context Menu item</label>
+    </p>
+    <p>
+      <label><input type="checkbox" id="ToolbarPopup">
+        Toolbar button opens popup instead of new tab</label>
+    </p>
+    <p>
+      <button id="prefSave">Save</button>
+      <button id="prefReset">Reset</button>
+    </p>
+  </body>
+</html>

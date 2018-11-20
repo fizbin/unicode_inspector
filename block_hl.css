@@ -1,0 +1,584 @@
+.hl_Basic_Latin .Basic_Latin { Background: #AFA; }
+.hl_Basic_Latin .locked .Basic_Latin { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Latin-1_Supplement .Latin-1_Supplement { Background: #AFA; }
+.hl_Latin-1_Supplement .locked .Latin-1_Supplement { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Latin_Extended-A .Latin_Extended-A { Background: #AFA; }
+.hl_Latin_Extended-A .locked .Latin_Extended-A { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Latin_Extended-B .Latin_Extended-B { Background: #AFA; }
+.hl_Latin_Extended-B .locked .Latin_Extended-B { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_IPA_Extensions .IPA_Extensions { Background: #AFA; }
+.hl_IPA_Extensions .locked .IPA_Extensions { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Spacing_Modifier_Letters .Spacing_Modifier_Letters { Background: #AFA; }
+.hl_Spacing_Modifier_Letters .locked .Spacing_Modifier_Letters { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Combining_Diacritical_Marks .Combining_Diacritical_Marks { Background: #AFA; }
+.hl_Combining_Diacritical_Marks .locked .Combining_Diacritical_Marks { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Greek_and_Coptic .Greek_and_Coptic { Background: #AFA; }
+.hl_Greek_and_Coptic .locked .Greek_and_Coptic { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Cyrillic .Cyrillic { Background: #AFA; }
+.hl_Cyrillic .locked .Cyrillic { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Cyrillic_Supplement .Cyrillic_Supplement { Background: #AFA; }
+.hl_Cyrillic_Supplement .locked .Cyrillic_Supplement { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Armenian .Armenian { Background: #AFA; }
+.hl_Armenian .locked .Armenian { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Hebrew .Hebrew { Background: #AFA; }
+.hl_Hebrew .locked .Hebrew { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Arabic .Arabic { Background: #AFA; }
+.hl_Arabic .locked .Arabic { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Syriac .Syriac { Background: #AFA; }
+.hl_Syriac .locked .Syriac { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Arabic_Supplement .Arabic_Supplement { Background: #AFA; }
+.hl_Arabic_Supplement .locked .Arabic_Supplement { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Thaana .Thaana { Background: #AFA; }
+.hl_Thaana .locked .Thaana { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_NKo .NKo { Background: #AFA; }
+.hl_NKo .locked .NKo { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Samaritan .Samaritan { Background: #AFA; }
+.hl_Samaritan .locked .Samaritan { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Mandaic .Mandaic { Background: #AFA; }
+.hl_Mandaic .locked .Mandaic { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Syriac_Supplement .Syriac_Supplement { Background: #AFA; }
+.hl_Syriac_Supplement .locked .Syriac_Supplement { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Arabic_Extended-A .Arabic_Extended-A { Background: #AFA; }
+.hl_Arabic_Extended-A .locked .Arabic_Extended-A { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Devanagari .Devanagari { Background: #AFA; }
+.hl_Devanagari .locked .Devanagari { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Bengali .Bengali { Background: #AFA; }
+.hl_Bengali .locked .Bengali { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Gurmukhi .Gurmukhi { Background: #AFA; }
+.hl_Gurmukhi .locked .Gurmukhi { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Gujarati .Gujarati { Background: #AFA; }
+.hl_Gujarati .locked .Gujarati { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Oriya .Oriya { Background: #AFA; }
+.hl_Oriya .locked .Oriya { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Tamil .Tamil { Background: #AFA; }
+.hl_Tamil .locked .Tamil { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Telugu .Telugu { Background: #AFA; }
+.hl_Telugu .locked .Telugu { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Kannada .Kannada { Background: #AFA; }
+.hl_Kannada .locked .Kannada { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Malayalam .Malayalam { Background: #AFA; }
+.hl_Malayalam .locked .Malayalam { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Sinhala .Sinhala { Background: #AFA; }
+.hl_Sinhala .locked .Sinhala { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Thai .Thai { Background: #AFA; }
+.hl_Thai .locked .Thai { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Lao .Lao { Background: #AFA; }
+.hl_Lao .locked .Lao { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Tibetan .Tibetan { Background: #AFA; }
+.hl_Tibetan .locked .Tibetan { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Myanmar .Myanmar { Background: #AFA; }
+.hl_Myanmar .locked .Myanmar { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Georgian .Georgian { Background: #AFA; }
+.hl_Georgian .locked .Georgian { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Hangul_Jamo .Hangul_Jamo { Background: #AFA; }
+.hl_Hangul_Jamo .locked .Hangul_Jamo { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Ethiopic .Ethiopic { Background: #AFA; }
+.hl_Ethiopic .locked .Ethiopic { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Ethiopic_Supplement .Ethiopic_Supplement { Background: #AFA; }
+.hl_Ethiopic_Supplement .locked .Ethiopic_Supplement { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Cherokee .Cherokee { Background: #AFA; }
+.hl_Cherokee .locked .Cherokee { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Unified_Canadian_Aboriginal_Syllabics .Unified_Canadian_Aboriginal_Syllabics { Background: #AFA; }
+.hl_Unified_Canadian_Aboriginal_Syllabics .locked .Unified_Canadian_Aboriginal_Syllabics { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Ogham .Ogham { Background: #AFA; }
+.hl_Ogham .locked .Ogham { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Runic .Runic { Background: #AFA; }
+.hl_Runic .locked .Runic { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Tagalog .Tagalog { Background: #AFA; }
+.hl_Tagalog .locked .Tagalog { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Hanunoo .Hanunoo { Background: #AFA; }
+.hl_Hanunoo .locked .Hanunoo { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Buhid .Buhid { Background: #AFA; }
+.hl_Buhid .locked .Buhid { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Tagbanwa .Tagbanwa { Background: #AFA; }
+.hl_Tagbanwa .locked .Tagbanwa { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Khmer .Khmer { Background: #AFA; }
+.hl_Khmer .locked .Khmer { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Mongolian .Mongolian { Background: #AFA; }
+.hl_Mongolian .locked .Mongolian { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Unified_Canadian_Aboriginal_Syllabics_Extended .Unified_Canadian_Aboriginal_Syllabics_Extended { Background: #AFA; }
+.hl_Unified_Canadian_Aboriginal_Syllabics_Extended .locked .Unified_Canadian_Aboriginal_Syllabics_Extended { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Limbu .Limbu { Background: #AFA; }
+.hl_Limbu .locked .Limbu { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Tai_Le .Tai_Le { Background: #AFA; }
+.hl_Tai_Le .locked .Tai_Le { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_New_Tai_Lue .New_Tai_Lue { Background: #AFA; }
+.hl_New_Tai_Lue .locked .New_Tai_Lue { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Khmer_Symbols .Khmer_Symbols { Background: #AFA; }
+.hl_Khmer_Symbols .locked .Khmer_Symbols { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Buginese .Buginese { Background: #AFA; }
+.hl_Buginese .locked .Buginese { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Tai_Tham .Tai_Tham { Background: #AFA; }
+.hl_Tai_Tham .locked .Tai_Tham { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Combining_Diacritical_Marks_Extended .Combining_Diacritical_Marks_Extended { Background: #AFA; }
+.hl_Combining_Diacritical_Marks_Extended .locked .Combining_Diacritical_Marks_Extended { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Balinese .Balinese { Background: #AFA; }
+.hl_Balinese .locked .Balinese { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Sundanese .Sundanese { Background: #AFA; }
+.hl_Sundanese .locked .Sundanese { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Batak .Batak { Background: #AFA; }
+.hl_Batak .locked .Batak { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Lepcha .Lepcha { Background: #AFA; }
+.hl_Lepcha .locked .Lepcha { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Ol_Chiki .Ol_Chiki { Background: #AFA; }
+.hl_Ol_Chiki .locked .Ol_Chiki { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Cyrillic_Extended-C .Cyrillic_Extended-C { Background: #AFA; }
+.hl_Cyrillic_Extended-C .locked .Cyrillic_Extended-C { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Georgian_Extended .Georgian_Extended { Background: #AFA; }
+.hl_Georgian_Extended .locked .Georgian_Extended { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Sundanese_Supplement .Sundanese_Supplement { Background: #AFA; }
+.hl_Sundanese_Supplement .locked .Sundanese_Supplement { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Vedic_Extensions .Vedic_Extensions { Background: #AFA; }
+.hl_Vedic_Extensions .locked .Vedic_Extensions { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Phonetic_Extensions .Phonetic_Extensions { Background: #AFA; }
+.hl_Phonetic_Extensions .locked .Phonetic_Extensions { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Phonetic_Extensions_Supplement .Phonetic_Extensions_Supplement { Background: #AFA; }
+.hl_Phonetic_Extensions_Supplement .locked .Phonetic_Extensions_Supplement { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Combining_Diacritical_Marks_Supplement .Combining_Diacritical_Marks_Supplement { Background: #AFA; }
+.hl_Combining_Diacritical_Marks_Supplement .locked .Combining_Diacritical_Marks_Supplement { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Latin_Extended_Additional .Latin_Extended_Additional { Background: #AFA; }
+.hl_Latin_Extended_Additional .locked .Latin_Extended_Additional { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Greek_Extended .Greek_Extended { Background: #AFA; }
+.hl_Greek_Extended .locked .Greek_Extended { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_General_Punctuation .General_Punctuation { Background: #AFA; }
+.hl_General_Punctuation .locked .General_Punctuation { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Superscripts_and_Subscripts .Superscripts_and_Subscripts { Background: #AFA; }
+.hl_Superscripts_and_Subscripts .locked .Superscripts_and_Subscripts { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Currency_Symbols .Currency_Symbols { Background: #AFA; }
+.hl_Currency_Symbols .locked .Currency_Symbols { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Combining_Diacritical_Marks_for_Symbols .Combining_Diacritical_Marks_for_Symbols { Background: #AFA; }
+.hl_Combining_Diacritical_Marks_for_Symbols .locked .Combining_Diacritical_Marks_for_Symbols { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Letterlike_Symbols .Letterlike_Symbols { Background: #AFA; }
+.hl_Letterlike_Symbols .locked .Letterlike_Symbols { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Number_Forms .Number_Forms { Background: #AFA; }
+.hl_Number_Forms .locked .Number_Forms { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Arrows .Arrows { Background: #AFA; }
+.hl_Arrows .locked .Arrows { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Mathematical_Operators .Mathematical_Operators { Background: #AFA; }
+.hl_Mathematical_Operators .locked .Mathematical_Operators { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Miscellaneous_Technical .Miscellaneous_Technical { Background: #AFA; }
+.hl_Miscellaneous_Technical .locked .Miscellaneous_Technical { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Control_Pictures .Control_Pictures { Background: #AFA; }
+.hl_Control_Pictures .locked .Control_Pictures { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Optical_Character_Recognition .Optical_Character_Recognition { Background: #AFA; }
+.hl_Optical_Character_Recognition .locked .Optical_Character_Recognition { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Enclosed_Alphanumerics .Enclosed_Alphanumerics { Background: #AFA; }
+.hl_Enclosed_Alphanumerics .locked .Enclosed_Alphanumerics { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Box_Drawing .Box_Drawing { Background: #AFA; }
+.hl_Box_Drawing .locked .Box_Drawing { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Block_Elements .Block_Elements { Background: #AFA; }
+.hl_Block_Elements .locked .Block_Elements { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Geometric_Shapes .Geometric_Shapes { Background: #AFA; }
+.hl_Geometric_Shapes .locked .Geometric_Shapes { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Miscellaneous_Symbols .Miscellaneous_Symbols { Background: #AFA; }
+.hl_Miscellaneous_Symbols .locked .Miscellaneous_Symbols { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Dingbats .Dingbats { Background: #AFA; }
+.hl_Dingbats .locked .Dingbats { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Miscellaneous_Mathematical_Symbols-A .Miscellaneous_Mathematical_Symbols-A { Background: #AFA; }
+.hl_Miscellaneous_Mathematical_Symbols-A .locked .Miscellaneous_Mathematical_Symbols-A { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Supplemental_Arrows-A .Supplemental_Arrows-A { Background: #AFA; }
+.hl_Supplemental_Arrows-A .locked .Supplemental_Arrows-A { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Braille_Patterns .Braille_Patterns { Background: #AFA; }
+.hl_Braille_Patterns .locked .Braille_Patterns { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Supplemental_Arrows-B .Supplemental_Arrows-B { Background: #AFA; }
+.hl_Supplemental_Arrows-B .locked .Supplemental_Arrows-B { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Miscellaneous_Mathematical_Symbols-B .Miscellaneous_Mathematical_Symbols-B { Background: #AFA; }
+.hl_Miscellaneous_Mathematical_Symbols-B .locked .Miscellaneous_Mathematical_Symbols-B { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Supplemental_Mathematical_Operators .Supplemental_Mathematical_Operators { Background: #AFA; }
+.hl_Supplemental_Mathematical_Operators .locked .Supplemental_Mathematical_Operators { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Miscellaneous_Symbols_and_Arrows .Miscellaneous_Symbols_and_Arrows { Background: #AFA; }
+.hl_Miscellaneous_Symbols_and_Arrows .locked .Miscellaneous_Symbols_and_Arrows { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Glagolitic .Glagolitic { Background: #AFA; }
+.hl_Glagolitic .locked .Glagolitic { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Latin_Extended-C .Latin_Extended-C { Background: #AFA; }
+.hl_Latin_Extended-C .locked .Latin_Extended-C { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Coptic .Coptic { Background: #AFA; }
+.hl_Coptic .locked .Coptic { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Georgian_Supplement .Georgian_Supplement { Background: #AFA; }
+.hl_Georgian_Supplement .locked .Georgian_Supplement { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Tifinagh .Tifinagh { Background: #AFA; }
+.hl_Tifinagh .locked .Tifinagh { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Ethiopic_Extended .Ethiopic_Extended { Background: #AFA; }
+.hl_Ethiopic_Extended .locked .Ethiopic_Extended { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Cyrillic_Extended-A .Cyrillic_Extended-A { Background: #AFA; }
+.hl_Cyrillic_Extended-A .locked .Cyrillic_Extended-A { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Supplemental_Punctuation .Supplemental_Punctuation { Background: #AFA; }
+.hl_Supplemental_Punctuation .locked .Supplemental_Punctuation { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_CJK_Radicals_Supplement .CJK_Radicals_Supplement { Background: #AFA; }
+.hl_CJK_Radicals_Supplement .locked .CJK_Radicals_Supplement { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Kangxi_Radicals .Kangxi_Radicals { Background: #AFA; }
+.hl_Kangxi_Radicals .locked .Kangxi_Radicals { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Ideographic_Description_Characters .Ideographic_Description_Characters { Background: #AFA; }
+.hl_Ideographic_Description_Characters .locked .Ideographic_Description_Characters { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_CJK_Symbols_and_Punctuation .CJK_Symbols_and_Punctuation { Background: #AFA; }
+.hl_CJK_Symbols_and_Punctuation .locked .CJK_Symbols_and_Punctuation { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Hiragana .Hiragana { Background: #AFA; }
+.hl_Hiragana .locked .Hiragana { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Katakana .Katakana { Background: #AFA; }
+.hl_Katakana .locked .Katakana { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Bopomofo .Bopomofo { Background: #AFA; }
+.hl_Bopomofo .locked .Bopomofo { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Hangul_Compatibility_Jamo .Hangul_Compatibility_Jamo { Background: #AFA; }
+.hl_Hangul_Compatibility_Jamo .locked .Hangul_Compatibility_Jamo { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Kanbun .Kanbun { Background: #AFA; }
+.hl_Kanbun .locked .Kanbun { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Bopomofo_Extended .Bopomofo_Extended { Background: #AFA; }
+.hl_Bopomofo_Extended .locked .Bopomofo_Extended { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_CJK_Strokes .CJK_Strokes { Background: #AFA; }
+.hl_CJK_Strokes .locked .CJK_Strokes { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Katakana_Phonetic_Extensions .Katakana_Phonetic_Extensions { Background: #AFA; }
+.hl_Katakana_Phonetic_Extensions .locked .Katakana_Phonetic_Extensions { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Enclosed_CJK_Letters_and_Months .Enclosed_CJK_Letters_and_Months { Background: #AFA; }
+.hl_Enclosed_CJK_Letters_and_Months .locked .Enclosed_CJK_Letters_and_Months { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_CJK_Compatibility .CJK_Compatibility { Background: #AFA; }
+.hl_CJK_Compatibility .locked .CJK_Compatibility { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_CJK_Unified_Ideographs_Extension_A .CJK_Unified_Ideographs_Extension_A { Background: #AFA; }
+.hl_CJK_Unified_Ideographs_Extension_A .locked .CJK_Unified_Ideographs_Extension_A { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Yijing_Hexagram_Symbols .Yijing_Hexagram_Symbols { Background: #AFA; }
+.hl_Yijing_Hexagram_Symbols .locked .Yijing_Hexagram_Symbols { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_CJK_Unified_Ideographs .CJK_Unified_Ideographs { Background: #AFA; }
+.hl_CJK_Unified_Ideographs .locked .CJK_Unified_Ideographs { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Yi_Syllables .Yi_Syllables { Background: #AFA; }
+.hl_Yi_Syllables .locked .Yi_Syllables { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Yi_Radicals .Yi_Radicals { Background: #AFA; }
+.hl_Yi_Radicals .locked .Yi_Radicals { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Lisu .Lisu { Background: #AFA; }
+.hl_Lisu .locked .Lisu { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Vai .Vai { Background: #AFA; }
+.hl_Vai .locked .Vai { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Cyrillic_Extended-B .Cyrillic_Extended-B { Background: #AFA; }
+.hl_Cyrillic_Extended-B .locked .Cyrillic_Extended-B { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Bamum .Bamum { Background: #AFA; }
+.hl_Bamum .locked .Bamum { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Modifier_Tone_Letters .Modifier_Tone_Letters { Background: #AFA; }
+.hl_Modifier_Tone_Letters .locked .Modifier_Tone_Letters { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Latin_Extended-D .Latin_Extended-D { Background: #AFA; }
+.hl_Latin_Extended-D .locked .Latin_Extended-D { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Syloti_Nagri .Syloti_Nagri { Background: #AFA; }
+.hl_Syloti_Nagri .locked .Syloti_Nagri { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Common_Indic_Number_Forms .Common_Indic_Number_Forms { Background: #AFA; }
+.hl_Common_Indic_Number_Forms .locked .Common_Indic_Number_Forms { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Phags-pa .Phags-pa { Background: #AFA; }
+.hl_Phags-pa .locked .Phags-pa { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Saurashtra .Saurashtra { Background: #AFA; }
+.hl_Saurashtra .locked .Saurashtra { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Devanagari_Extended .Devanagari_Extended { Background: #AFA; }
+.hl_Devanagari_Extended .locked .Devanagari_Extended { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Kayah_Li .Kayah_Li { Background: #AFA; }
+.hl_Kayah_Li .locked .Kayah_Li { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Rejang .Rejang { Background: #AFA; }
+.hl_Rejang .locked .Rejang { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Hangul_Jamo_Extended-A .Hangul_Jamo_Extended-A { Background: #AFA; }
+.hl_Hangul_Jamo_Extended-A .locked .Hangul_Jamo_Extended-A { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Javanese .Javanese { Background: #AFA; }
+.hl_Javanese .locked .Javanese { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Myanmar_Extended-B .Myanmar_Extended-B { Background: #AFA; }
+.hl_Myanmar_Extended-B .locked .Myanmar_Extended-B { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Cham .Cham { Background: #AFA; }
+.hl_Cham .locked .Cham { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Myanmar_Extended-A .Myanmar_Extended-A { Background: #AFA; }
+.hl_Myanmar_Extended-A .locked .Myanmar_Extended-A { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Tai_Viet .Tai_Viet { Background: #AFA; }
+.hl_Tai_Viet .locked .Tai_Viet { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Meetei_Mayek_Extensions .Meetei_Mayek_Extensions { Background: #AFA; }
+.hl_Meetei_Mayek_Extensions .locked .Meetei_Mayek_Extensions { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Ethiopic_Extended-A .Ethiopic_Extended-A { Background: #AFA; }
+.hl_Ethiopic_Extended-A .locked .Ethiopic_Extended-A { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Latin_Extended-E .Latin_Extended-E { Background: #AFA; }
+.hl_Latin_Extended-E .locked .Latin_Extended-E { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Cherokee_Supplement .Cherokee_Supplement { Background: #AFA; }
+.hl_Cherokee_Supplement .locked .Cherokee_Supplement { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Meetei_Mayek .Meetei_Mayek { Background: #AFA; }
+.hl_Meetei_Mayek .locked .Meetei_Mayek { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Hangul_Syllables .Hangul_Syllables { Background: #AFA; }
+.hl_Hangul_Syllables .locked .Hangul_Syllables { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Hangul_Jamo_Extended-B .Hangul_Jamo_Extended-B { Background: #AFA; }
+.hl_Hangul_Jamo_Extended-B .locked .Hangul_Jamo_Extended-B { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_High_Surrogates .High_Surrogates { Background: #AFA; }
+.hl_High_Surrogates .locked .High_Surrogates { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_High_Private_Use_Surrogates .High_Private_Use_Surrogates { Background: #AFA; }
+.hl_High_Private_Use_Surrogates .locked .High_Private_Use_Surrogates { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Low_Surrogates .Low_Surrogates { Background: #AFA; }
+.hl_Low_Surrogates .locked .Low_Surrogates { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Private_Use_Area .Private_Use_Area { Background: #AFA; }
+.hl_Private_Use_Area .locked .Private_Use_Area { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_CJK_Compatibility_Ideographs .CJK_Compatibility_Ideographs { Background: #AFA; }
+.hl_CJK_Compatibility_Ideographs .locked .CJK_Compatibility_Ideographs { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Alphabetic_Presentation_Forms .Alphabetic_Presentation_Forms { Background: #AFA; }
+.hl_Alphabetic_Presentation_Forms .locked .Alphabetic_Presentation_Forms { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Arabic_Presentation_Forms-A .Arabic_Presentation_Forms-A { Background: #AFA; }
+.hl_Arabic_Presentation_Forms-A .locked .Arabic_Presentation_Forms-A { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Variation_Selectors .Variation_Selectors { Background: #AFA; }
+.hl_Variation_Selectors .locked .Variation_Selectors { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Vertical_Forms .Vertical_Forms { Background: #AFA; }
+.hl_Vertical_Forms .locked .Vertical_Forms { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Combining_Half_Marks .Combining_Half_Marks { Background: #AFA; }
+.hl_Combining_Half_Marks .locked .Combining_Half_Marks { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_CJK_Compatibility_Forms .CJK_Compatibility_Forms { Background: #AFA; }
+.hl_CJK_Compatibility_Forms .locked .CJK_Compatibility_Forms { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Small_Form_Variants .Small_Form_Variants { Background: #AFA; }
+.hl_Small_Form_Variants .locked .Small_Form_Variants { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Arabic_Presentation_Forms-B .Arabic_Presentation_Forms-B { Background: #AFA; }
+.hl_Arabic_Presentation_Forms-B .locked .Arabic_Presentation_Forms-B { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Halfwidth_and_Fullwidth_Forms .Halfwidth_and_Fullwidth_Forms { Background: #AFA; }
+.hl_Halfwidth_and_Fullwidth_Forms .locked .Halfwidth_and_Fullwidth_Forms { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Specials .Specials { Background: #AFA; }
+.hl_Specials .locked .Specials { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Linear_B_Syllabary .Linear_B_Syllabary { Background: #AFA; }
+.hl_Linear_B_Syllabary .locked .Linear_B_Syllabary { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Linear_B_Ideograms .Linear_B_Ideograms { Background: #AFA; }
+.hl_Linear_B_Ideograms .locked .Linear_B_Ideograms { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Aegean_Numbers .Aegean_Numbers { Background: #AFA; }
+.hl_Aegean_Numbers .locked .Aegean_Numbers { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Ancient_Greek_Numbers .Ancient_Greek_Numbers { Background: #AFA; }
+.hl_Ancient_Greek_Numbers .locked .Ancient_Greek_Numbers { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Ancient_Symbols .Ancient_Symbols { Background: #AFA; }
+.hl_Ancient_Symbols .locked .Ancient_Symbols { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Phaistos_Disc .Phaistos_Disc { Background: #AFA; }
+.hl_Phaistos_Disc .locked .Phaistos_Disc { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Lycian .Lycian { Background: #AFA; }
+.hl_Lycian .locked .Lycian { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Carian .Carian { Background: #AFA; }
+.hl_Carian .locked .Carian { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Coptic_Epact_Numbers .Coptic_Epact_Numbers { Background: #AFA; }
+.hl_Coptic_Epact_Numbers .locked .Coptic_Epact_Numbers { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Old_Italic .Old_Italic { Background: #AFA; }
+.hl_Old_Italic .locked .Old_Italic { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Gothic .Gothic { Background: #AFA; }
+.hl_Gothic .locked .Gothic { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Old_Permic .Old_Permic { Background: #AFA; }
+.hl_Old_Permic .locked .Old_Permic { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Ugaritic .Ugaritic { Background: #AFA; }
+.hl_Ugaritic .locked .Ugaritic { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Old_Persian .Old_Persian { Background: #AFA; }
+.hl_Old_Persian .locked .Old_Persian { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Deseret .Deseret { Background: #AFA; }
+.hl_Deseret .locked .Deseret { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Shavian .Shavian { Background: #AFA; }
+.hl_Shavian .locked .Shavian { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Osmanya .Osmanya { Background: #AFA; }
+.hl_Osmanya .locked .Osmanya { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Osage .Osage { Background: #AFA; }
+.hl_Osage .locked .Osage { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Elbasan .Elbasan { Background: #AFA; }
+.hl_Elbasan .locked .Elbasan { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Caucasian_Albanian .Caucasian_Albanian { Background: #AFA; }
+.hl_Caucasian_Albanian .locked .Caucasian_Albanian { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Linear_A .Linear_A { Background: #AFA; }
+.hl_Linear_A .locked .Linear_A { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Cypriot_Syllabary .Cypriot_Syllabary { Background: #AFA; }
+.hl_Cypriot_Syllabary .locked .Cypriot_Syllabary { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Imperial_Aramaic .Imperial_Aramaic { Background: #AFA; }
+.hl_Imperial_Aramaic .locked .Imperial_Aramaic { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Palmyrene .Palmyrene { Background: #AFA; }
+.hl_Palmyrene .locked .Palmyrene { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Nabataean .Nabataean { Background: #AFA; }
+.hl_Nabataean .locked .Nabataean { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Hatran .Hatran { Background: #AFA; }
+.hl_Hatran .locked .Hatran { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Phoenician .Phoenician { Background: #AFA; }
+.hl_Phoenician .locked .Phoenician { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Lydian .Lydian { Background: #AFA; }
+.hl_Lydian .locked .Lydian { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Meroitic_Hieroglyphs .Meroitic_Hieroglyphs { Background: #AFA; }
+.hl_Meroitic_Hieroglyphs .locked .Meroitic_Hieroglyphs { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Meroitic_Cursive .Meroitic_Cursive { Background: #AFA; }
+.hl_Meroitic_Cursive .locked .Meroitic_Cursive { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Kharoshthi .Kharoshthi { Background: #AFA; }
+.hl_Kharoshthi .locked .Kharoshthi { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Old_South_Arabian .Old_South_Arabian { Background: #AFA; }
+.hl_Old_South_Arabian .locked .Old_South_Arabian { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Old_North_Arabian .Old_North_Arabian { Background: #AFA; }
+.hl_Old_North_Arabian .locked .Old_North_Arabian { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Manichaean .Manichaean { Background: #AFA; }
+.hl_Manichaean .locked .Manichaean { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Avestan .Avestan { Background: #AFA; }
+.hl_Avestan .locked .Avestan { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Inscriptional_Parthian .Inscriptional_Parthian { Background: #AFA; }
+.hl_Inscriptional_Parthian .locked .Inscriptional_Parthian { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Inscriptional_Pahlavi .Inscriptional_Pahlavi { Background: #AFA; }
+.hl_Inscriptional_Pahlavi .locked .Inscriptional_Pahlavi { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Psalter_Pahlavi .Psalter_Pahlavi { Background: #AFA; }
+.hl_Psalter_Pahlavi .locked .Psalter_Pahlavi { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Old_Turkic .Old_Turkic { Background: #AFA; }
+.hl_Old_Turkic .locked .Old_Turkic { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Old_Hungarian .Old_Hungarian { Background: #AFA; }
+.hl_Old_Hungarian .locked .Old_Hungarian { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Hanifi_Rohingya .Hanifi_Rohingya { Background: #AFA; }
+.hl_Hanifi_Rohingya .locked .Hanifi_Rohingya { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Rumi_Numeral_Symbols .Rumi_Numeral_Symbols { Background: #AFA; }
+.hl_Rumi_Numeral_Symbols .locked .Rumi_Numeral_Symbols { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Old_Sogdian .Old_Sogdian { Background: #AFA; }
+.hl_Old_Sogdian .locked .Old_Sogdian { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Sogdian .Sogdian { Background: #AFA; }
+.hl_Sogdian .locked .Sogdian { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Brahmi .Brahmi { Background: #AFA; }
+.hl_Brahmi .locked .Brahmi { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Kaithi .Kaithi { Background: #AFA; }
+.hl_Kaithi .locked .Kaithi { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Sora_Sompeng .Sora_Sompeng { Background: #AFA; }
+.hl_Sora_Sompeng .locked .Sora_Sompeng { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Chakma .Chakma { Background: #AFA; }
+.hl_Chakma .locked .Chakma { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Mahajani .Mahajani { Background: #AFA; }
+.hl_Mahajani .locked .Mahajani { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Sharada .Sharada { Background: #AFA; }
+.hl_Sharada .locked .Sharada { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Sinhala_Archaic_Numbers .Sinhala_Archaic_Numbers { Background: #AFA; }
+.hl_Sinhala_Archaic_Numbers .locked .Sinhala_Archaic_Numbers { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Khojki .Khojki { Background: #AFA; }
+.hl_Khojki .locked .Khojki { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Multani .Multani { Background: #AFA; }
+.hl_Multani .locked .Multani { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Khudawadi .Khudawadi { Background: #AFA; }
+.hl_Khudawadi .locked .Khudawadi { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Grantha .Grantha { Background: #AFA; }
+.hl_Grantha .locked .Grantha { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Newa .Newa { Background: #AFA; }
+.hl_Newa .locked .Newa { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Tirhuta .Tirhuta { Background: #AFA; }
+.hl_Tirhuta .locked .Tirhuta { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Siddham .Siddham { Background: #AFA; }
+.hl_Siddham .locked .Siddham { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Modi .Modi { Background: #AFA; }
+.hl_Modi .locked .Modi { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Mongolian_Supplement .Mongolian_Supplement { Background: #AFA; }
+.hl_Mongolian_Supplement .locked .Mongolian_Supplement { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Takri .Takri { Background: #AFA; }
+.hl_Takri .locked .Takri { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Ahom .Ahom { Background: #AFA; }
+.hl_Ahom .locked .Ahom { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Dogra .Dogra { Background: #AFA; }
+.hl_Dogra .locked .Dogra { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Warang_Citi .Warang_Citi { Background: #AFA; }
+.hl_Warang_Citi .locked .Warang_Citi { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Zanabazar_Square .Zanabazar_Square { Background: #AFA; }
+.hl_Zanabazar_Square .locked .Zanabazar_Square { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Soyombo .Soyombo { Background: #AFA; }
+.hl_Soyombo .locked .Soyombo { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Pau_Cin_Hau .Pau_Cin_Hau { Background: #AFA; }
+.hl_Pau_Cin_Hau .locked .Pau_Cin_Hau { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Bhaiksuki .Bhaiksuki { Background: #AFA; }
+.hl_Bhaiksuki .locked .Bhaiksuki { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Marchen .Marchen { Background: #AFA; }
+.hl_Marchen .locked .Marchen { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Masaram_Gondi .Masaram_Gondi { Background: #AFA; }
+.hl_Masaram_Gondi .locked .Masaram_Gondi { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Gunjala_Gondi .Gunjala_Gondi { Background: #AFA; }
+.hl_Gunjala_Gondi .locked .Gunjala_Gondi { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Makasar .Makasar { Background: #AFA; }
+.hl_Makasar .locked .Makasar { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Cuneiform .Cuneiform { Background: #AFA; }
+.hl_Cuneiform .locked .Cuneiform { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Cuneiform_Numbers_and_Punctuation .Cuneiform_Numbers_and_Punctuation { Background: #AFA; }
+.hl_Cuneiform_Numbers_and_Punctuation .locked .Cuneiform_Numbers_and_Punctuation { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Early_Dynastic_Cuneiform .Early_Dynastic_Cuneiform { Background: #AFA; }
+.hl_Early_Dynastic_Cuneiform .locked .Early_Dynastic_Cuneiform { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Egyptian_Hieroglyphs .Egyptian_Hieroglyphs { Background: #AFA; }
+.hl_Egyptian_Hieroglyphs .locked .Egyptian_Hieroglyphs { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Anatolian_Hieroglyphs .Anatolian_Hieroglyphs { Background: #AFA; }
+.hl_Anatolian_Hieroglyphs .locked .Anatolian_Hieroglyphs { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Bamum_Supplement .Bamum_Supplement { Background: #AFA; }
+.hl_Bamum_Supplement .locked .Bamum_Supplement { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Mro .Mro { Background: #AFA; }
+.hl_Mro .locked .Mro { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Bassa_Vah .Bassa_Vah { Background: #AFA; }
+.hl_Bassa_Vah .locked .Bassa_Vah { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Pahawh_Hmong .Pahawh_Hmong { Background: #AFA; }
+.hl_Pahawh_Hmong .locked .Pahawh_Hmong { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Medefaidrin .Medefaidrin { Background: #AFA; }
+.hl_Medefaidrin .locked .Medefaidrin { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Miao .Miao { Background: #AFA; }
+.hl_Miao .locked .Miao { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Ideographic_Symbols_and_Punctuation .Ideographic_Symbols_and_Punctuation { Background: #AFA; }
+.hl_Ideographic_Symbols_and_Punctuation .locked .Ideographic_Symbols_and_Punctuation { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Tangut .Tangut { Background: #AFA; }
+.hl_Tangut .locked .Tangut { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Tangut_Components .Tangut_Components { Background: #AFA; }
+.hl_Tangut_Components .locked .Tangut_Components { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Kana_Supplement .Kana_Supplement { Background: #AFA; }
+.hl_Kana_Supplement .locked .Kana_Supplement { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Kana_Extended-A .Kana_Extended-A { Background: #AFA; }
+.hl_Kana_Extended-A .locked .Kana_Extended-A { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Nushu .Nushu { Background: #AFA; }
+.hl_Nushu .locked .Nushu { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Duployan .Duployan { Background: #AFA; }
+.hl_Duployan .locked .Duployan { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Shorthand_Format_Controls .Shorthand_Format_Controls { Background: #AFA; }
+.hl_Shorthand_Format_Controls .locked .Shorthand_Format_Controls { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Byzantine_Musical_Symbols .Byzantine_Musical_Symbols { Background: #AFA; }
+.hl_Byzantine_Musical_Symbols .locked .Byzantine_Musical_Symbols { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Musical_Symbols .Musical_Symbols { Background: #AFA; }
+.hl_Musical_Symbols .locked .Musical_Symbols { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Ancient_Greek_Musical_Notation .Ancient_Greek_Musical_Notation { Background: #AFA; }
+.hl_Ancient_Greek_Musical_Notation .locked .Ancient_Greek_Musical_Notation { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Mayan_Numerals .Mayan_Numerals { Background: #AFA; }
+.hl_Mayan_Numerals .locked .Mayan_Numerals { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Tai_Xuan_Jing_Symbols .Tai_Xuan_Jing_Symbols { Background: #AFA; }
+.hl_Tai_Xuan_Jing_Symbols .locked .Tai_Xuan_Jing_Symbols { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Counting_Rod_Numerals .Counting_Rod_Numerals { Background: #AFA; }
+.hl_Counting_Rod_Numerals .locked .Counting_Rod_Numerals { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Mathematical_Alphanumeric_Symbols .Mathematical_Alphanumeric_Symbols { Background: #AFA; }
+.hl_Mathematical_Alphanumeric_Symbols .locked .Mathematical_Alphanumeric_Symbols { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Sutton_SignWriting .Sutton_SignWriting { Background: #AFA; }
+.hl_Sutton_SignWriting .locked .Sutton_SignWriting { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Glagolitic_Supplement .Glagolitic_Supplement { Background: #AFA; }
+.hl_Glagolitic_Supplement .locked .Glagolitic_Supplement { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Mende_Kikakui .Mende_Kikakui { Background: #AFA; }
+.hl_Mende_Kikakui .locked .Mende_Kikakui { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Adlam .Adlam { Background: #AFA; }
+.hl_Adlam .locked .Adlam { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Indic_Siyaq_Numbers .Indic_Siyaq_Numbers { Background: #AFA; }
+.hl_Indic_Siyaq_Numbers .locked .Indic_Siyaq_Numbers { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Arabic_Mathematical_Alphabetic_Symbols .Arabic_Mathematical_Alphabetic_Symbols { Background: #AFA; }
+.hl_Arabic_Mathematical_Alphabetic_Symbols .locked .Arabic_Mathematical_Alphabetic_Symbols { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Mahjong_Tiles .Mahjong_Tiles { Background: #AFA; }
+.hl_Mahjong_Tiles .locked .Mahjong_Tiles { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Domino_Tiles .Domino_Tiles { Background: #AFA; }
+.hl_Domino_Tiles .locked .Domino_Tiles { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Playing_Cards .Playing_Cards { Background: #AFA; }
+.hl_Playing_Cards .locked .Playing_Cards { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Enclosed_Alphanumeric_Supplement .Enclosed_Alphanumeric_Supplement { Background: #AFA; }
+.hl_Enclosed_Alphanumeric_Supplement .locked .Enclosed_Alphanumeric_Supplement { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Enclosed_Ideographic_Supplement .Enclosed_Ideographic_Supplement { Background: #AFA; }
+.hl_Enclosed_Ideographic_Supplement .locked .Enclosed_Ideographic_Supplement { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Miscellaneous_Symbols_and_Pictographs .Miscellaneous_Symbols_and_Pictographs { Background: #AFA; }
+.hl_Miscellaneous_Symbols_and_Pictographs .locked .Miscellaneous_Symbols_and_Pictographs { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Emoticons .Emoticons { Background: #AFA; }
+.hl_Emoticons .locked .Emoticons { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Ornamental_Dingbats .Ornamental_Dingbats { Background: #AFA; }
+.hl_Ornamental_Dingbats .locked .Ornamental_Dingbats { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Transport_and_Map_Symbols .Transport_and_Map_Symbols { Background: #AFA; }
+.hl_Transport_and_Map_Symbols .locked .Transport_and_Map_Symbols { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Alchemical_Symbols .Alchemical_Symbols { Background: #AFA; }
+.hl_Alchemical_Symbols .locked .Alchemical_Symbols { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Geometric_Shapes_Extended .Geometric_Shapes_Extended { Background: #AFA; }
+.hl_Geometric_Shapes_Extended .locked .Geometric_Shapes_Extended { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Supplemental_Arrows-C .Supplemental_Arrows-C { Background: #AFA; }
+.hl_Supplemental_Arrows-C .locked .Supplemental_Arrows-C { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Supplemental_Symbols_and_Pictographs .Supplemental_Symbols_and_Pictographs { Background: #AFA; }
+.hl_Supplemental_Symbols_and_Pictographs .locked .Supplemental_Symbols_and_Pictographs { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Chess_Symbols .Chess_Symbols { Background: #AFA; }
+.hl_Chess_Symbols .locked .Chess_Symbols { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_CJK_Unified_Ideographs_Extension_B .CJK_Unified_Ideographs_Extension_B { Background: #AFA; }
+.hl_CJK_Unified_Ideographs_Extension_B .locked .CJK_Unified_Ideographs_Extension_B { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_CJK_Unified_Ideographs_Extension_C .CJK_Unified_Ideographs_Extension_C { Background: #AFA; }
+.hl_CJK_Unified_Ideographs_Extension_C .locked .CJK_Unified_Ideographs_Extension_C { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_CJK_Unified_Ideographs_Extension_D .CJK_Unified_Ideographs_Extension_D { Background: #AFA; }
+.hl_CJK_Unified_Ideographs_Extension_D .locked .CJK_Unified_Ideographs_Extension_D { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_CJK_Unified_Ideographs_Extension_E .CJK_Unified_Ideographs_Extension_E { Background: #AFA; }
+.hl_CJK_Unified_Ideographs_Extension_E .locked .CJK_Unified_Ideographs_Extension_E { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_CJK_Unified_Ideographs_Extension_F .CJK_Unified_Ideographs_Extension_F { Background: #AFA; }
+.hl_CJK_Unified_Ideographs_Extension_F .locked .CJK_Unified_Ideographs_Extension_F { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_CJK_Compatibility_Ideographs_Supplement .CJK_Compatibility_Ideographs_Supplement { Background: #AFA; }
+.hl_CJK_Compatibility_Ideographs_Supplement .locked .CJK_Compatibility_Ideographs_Supplement { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Tags .Tags { Background: #AFA; }
+.hl_Tags .locked .Tags { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Variation_Selectors_Supplement .Variation_Selectors_Supplement { Background: #AFA; }
+.hl_Variation_Selectors_Supplement .locked .Variation_Selectors_Supplement { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Supplementary_Private_Use_Area-A .Supplementary_Private_Use_Area-A { Background: #AFA; }
+.hl_Supplementary_Private_Use_Area-A .locked .Supplementary_Private_Use_Area-A { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Supplementary_Private_Use_Area-B .Supplementary_Private_Use_Area-B { Background: #AFA; }
+.hl_Supplementary_Private_Use_Area-B .locked .Supplementary_Private_Use_Area-B { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_No_Block .No_Block { Background: #AFA; }
+.hl_No_Block .locked .No_Block { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
