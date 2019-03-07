@@ -412,6 +412,8 @@
 .hl_Old_Sogdian .locked .Old_Sogdian { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
 .hl_Sogdian .Sogdian { Background: #AFA; }
 .hl_Sogdian .locked .Sogdian { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Elymaic .Elymaic { Background: #AFA; }
+.hl_Elymaic .locked .Elymaic { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
 .hl_Brahmi .Brahmi { Background: #AFA; }
 .hl_Brahmi .locked .Brahmi { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
 .hl_Kaithi .Kaithi { Background: #AFA; }
@@ -452,6 +454,8 @@
 .hl_Dogra .locked .Dogra { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
 .hl_Warang_Citi .Warang_Citi { Background: #AFA; }
 .hl_Warang_Citi .locked .Warang_Citi { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Nandinagari .Nandinagari { Background: #AFA; }
+.hl_Nandinagari .locked .Nandinagari { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
 .hl_Zanabazar_Square .Zanabazar_Square { Background: #AFA; }
 .hl_Zanabazar_Square .locked .Zanabazar_Square { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
 .hl_Soyombo .Soyombo { Background: #AFA; }
@@ -468,6 +472,8 @@
 .hl_Gunjala_Gondi .locked .Gunjala_Gondi { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
 .hl_Makasar .Makasar { Background: #AFA; }
 .hl_Makasar .locked .Makasar { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Tamil_Supplement .Tamil_Supplement { Background: #AFA; }
+.hl_Tamil_Supplement .locked .Tamil_Supplement { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
 .hl_Cuneiform .Cuneiform { Background: #AFA; }
 .hl_Cuneiform .locked .Cuneiform { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
 .hl_Cuneiform_Numbers_and_Punctuation .Cuneiform_Numbers_and_Punctuation { Background: #AFA; }
@@ -476,6 +482,8 @@
 .hl_Early_Dynastic_Cuneiform .locked .Early_Dynastic_Cuneiform { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
 .hl_Egyptian_Hieroglyphs .Egyptian_Hieroglyphs { Background: #AFA; }
 .hl_Egyptian_Hieroglyphs .locked .Egyptian_Hieroglyphs { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Egyptian_Hieroglyph_Format_Controls .Egyptian_Hieroglyph_Format_Controls { Background: #AFA; }
+.hl_Egyptian_Hieroglyph_Format_Controls .locked .Egyptian_Hieroglyph_Format_Controls { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
 .hl_Anatolian_Hieroglyphs .Anatolian_Hieroglyphs { Background: #AFA; }
 .hl_Anatolian_Hieroglyphs .locked .Anatolian_Hieroglyphs { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
 .hl_Bamum_Supplement .Bamum_Supplement { Background: #AFA; }
@@ -500,6 +508,8 @@
 .hl_Kana_Supplement .locked .Kana_Supplement { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
 .hl_Kana_Extended-A .Kana_Extended-A { Background: #AFA; }
 .hl_Kana_Extended-A .locked .Kana_Extended-A { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Small_Kana_Extension .Small_Kana_Extension { Background: #AFA; }
+.hl_Small_Kana_Extension .locked .Small_Kana_Extension { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
 .hl_Nushu .Nushu { Background: #AFA; }
 .hl_Nushu .locked .Nushu { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
 .hl_Duployan .Duployan { Background: #AFA; }
@@ -524,12 +534,18 @@
 .hl_Sutton_SignWriting .locked .Sutton_SignWriting { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
 .hl_Glagolitic_Supplement .Glagolitic_Supplement { Background: #AFA; }
 .hl_Glagolitic_Supplement .locked .Glagolitic_Supplement { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Nyiakeng_Puachue_Hmong .Nyiakeng_Puachue_Hmong { Background: #AFA; }
+.hl_Nyiakeng_Puachue_Hmong .locked .Nyiakeng_Puachue_Hmong { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Wancho .Wancho { Background: #AFA; }
+.hl_Wancho .locked .Wancho { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
 .hl_Mende_Kikakui .Mende_Kikakui { Background: #AFA; }
 .hl_Mende_Kikakui .locked .Mende_Kikakui { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
 .hl_Adlam .Adlam { Background: #AFA; }
 .hl_Adlam .locked .Adlam { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
 .hl_Indic_Siyaq_Numbers .Indic_Siyaq_Numbers { Background: #AFA; }
 .hl_Indic_Siyaq_Numbers .locked .Indic_Siyaq_Numbers { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Ottoman_Siyaq_Numbers .Ottoman_Siyaq_Numbers { Background: #AFA; }
+.hl_Ottoman_Siyaq_Numbers .locked .Ottoman_Siyaq_Numbers { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
 .hl_Arabic_Mathematical_Alphabetic_Symbols .Arabic_Mathematical_Alphabetic_Symbols { Background: #AFA; }
 .hl_Arabic_Mathematical_Alphabetic_Symbols .locked .Arabic_Mathematical_Alphabetic_Symbols { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
 .hl_Mahjong_Tiles .Mahjong_Tiles { Background: #AFA; }
@@ -560,6 +576,8 @@
 .hl_Supplemental_Symbols_and_Pictographs .locked .Supplemental_Symbols_and_Pictographs { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
 .hl_Chess_Symbols .Chess_Symbols { Background: #AFA; }
 .hl_Chess_Symbols .locked .Chess_Symbols { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
+.hl_Symbols_and_Pictographs_Extended-A .Symbols_and_Pictographs_Extended-A { Background: #AFA; }
+.hl_Symbols_and_Pictographs_Extended-A .locked .Symbols_and_Pictographs_Extended-A { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
 .hl_CJK_Unified_Ideographs_Extension_B .CJK_Unified_Ideographs_Extension_B { Background: #AFA; }
 .hl_CJK_Unified_Ideographs_Extension_B .locked .CJK_Unified_Ideographs_Extension_B { Background: #AFA; background-repeat: no-repeat; background-image: url(icons/anchor.gif); background-position: right}
 .hl_CJK_Unified_Ideographs_Extension_C .CJK_Unified_Ideographs_Extension_C { Background: #AFA; }

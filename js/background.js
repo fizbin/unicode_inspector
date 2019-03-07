@@ -46,9 +46,9 @@ async function getTarget(message, sender, sendResponse) {
   try {
     var storageError = '';
     try {
-      var items = await apiToPromise1(chrome.storage.local.get,
-                                      {unistring: '',
-                                       justStorage: false, e: ''});
+      var items = await apiToPromise1(
+        (...v) => chrome.storage.local.get(...v),
+        {unistring: '', justStorage: false, e: ''});
     } catch (e) {
       storageError = e;
       items = {unistring: '', justStorage: false};
@@ -70,7 +70,7 @@ async function getTarget(message, sender, sendResponse) {
       }
     }
     if (items.justStorage) {
-      await apiToPromise1(chrome.storage.local.set,
+      await apiToPromise1((...v) => chrome.storage.local.set(...v),
                           {justStorage: false, e: ''});
       fromStorage();
     } else {
@@ -105,10 +105,10 @@ async function browserActionListener(myTab) {
   var sel = '';
   try {
     sel = await getCurrentTabSelection();
-    await apiToPromise1(chrome.storage.local.set,
+    await apiToPromise1((...v) => chrome.storage.local.set(...v),
                         {unistring: sel, justStorage: true, e: ''});
   } catch (e) {
-    await apiToPromise1(chrome.storage.local.set,
+    await apiToPromise1((...v) => chrome.storage.local.set(...v),
                         {justStorage: true,
                          e: e + '; falling back to last string'});
   }
