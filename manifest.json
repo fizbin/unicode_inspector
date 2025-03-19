@@ -1,17 +1,16 @@
 {
   "name": "Unicode Inspector",
-  "version": "1.3",
+  "version": "2.0",
   "description": "Break down strings into unicode codepoints",
-  "permissions": ["contextMenus", "activeTab", "storage"],
+  "permissions": ["contextMenus", "activeTab", "storage", "scripting", "offscreen"],
   "background": {
-    "scripts": ["js/util.js", "js/get_block.js", "js/background.js"],
-    "persistent": false
+    "service_worker": "js/background.js"
   },
   "options_ui": {
     "page": "options.html",
     "open_in_tab": false
   },
-  "browser_action": {
+  "action": {
     "default_icon": {
       "16": "icons/unidecode16.png",
       "32": "icons/unidecode32.png",
@@ -27,5 +26,8 @@
     "48": "icons/unidecode48.png",
     "128": "icons/unidecode128.png"
   },
-  "manifest_version": 2
+  "content_security_policy": {
+    "extension_pages": "default-src 'self'"
+  },
+  "manifest_version": 3
 }

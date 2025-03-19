@@ -6,20 +6,6 @@ const prefDefaults = Object.freeze({
   cpInfoURL: 'https://www.compart.com/en/unicode/U+{cp.u}'
 });
 
-function apiToPromise1(api, ...theArgs) {
-  return new Promise((resolve, reject) => {
-    api(...theArgs,
-        function(theOneResult) {
-          if (chrome.runtime.lastError) {
-            reject(chrome.runtime.lastError.message);
-          }
-          else {
-            resolve(theOneResult);
-          }
-        });
-  });
-}
-
 function openForChar(ch, infoTxt) {
   var cp = ch.codePointAt(0);
   var cpShortHex = cp.toString(16);
@@ -64,8 +50,8 @@ function contextMenuListener(info, tab) {
   chrome.storage.local.set(
     {unistring: info.selectionText, justStorage: true, e: ''},
     function () {
-      if (chrome.browserAction.openPopup) {
-        chrome.browserAction.openPopup(
+      if (chrome.action.openPopup) {
+        chrome.action.openPopup(
           function(w) {
             if (!w) {
               chrome.storage.local.set({justStorage: false, e: ''});
@@ -75,7 +61,7 @@ function contextMenuListener(info, tab) {
       } else {
         window.open(chrome.runtime.getURL("popup.html"), '_blank');
       };
-    });  
+    });
 }
 
 function actOnPrefs() {
@@ -83,9 +69,9 @@ function actOnPrefs() {
     prefDefaults,
     function (items) {
       if (items.haveToolbarPopup) {
-        chrome.browserAction.setPopup({popup: 'popup.html?popup=true'});
+        chrome.action.setPopup({popup: 'popup.html?popup=true'});
       } else {
-        chrome.browserAction.setPopup({popup: ''});
+        chrome.action.setPopup({popup: ''});
       }
       if (items.haveContextMenu) {
         chrome.contextMenus.create(

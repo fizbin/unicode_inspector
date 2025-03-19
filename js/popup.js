@@ -191,6 +191,7 @@ async function rebuild(inVal, skipElem) {
     case "haskell": v.value = toCodeHaskell(inVal); break;
     case "html": v.value = toCodeHTML(inVal); break;
     case "xml": v.value = toCodeXML(inVal); break;
+    case "re2": v.value = toCodeRE2(inVal); break;
     case "rust": v.value = toCodeRust(inVal); break;
     case "uri": v.value = encodeURIComponent(inVal); break;
     }
@@ -297,6 +298,7 @@ function fromCode(v) {
   case "python": return fromCodePython(v);
   case "go": return fromCodeGo(v);
   case "haskell": return fromCodeHaskell(v);
+  case "re2": return fromCodeRE2(v);
   case "rust": return fromCodeRust(v);
   case "html": return fromCodeHTML(v);
   case "xml": return fromCodeHTML(v);
@@ -1262,7 +1264,7 @@ function toCodePython(v) {
 const HaskellSimpleEscapeMap = new Map(
   [...'ntvbrfa\"\\'].map((c) => [c, CSimpleEscapeMap.get(c)]));
 const ReverseHaskellSimpleEscapeMap = new Map(
-  Array.from(GoSimpleEscapeMap.entries()).map(
+  Array.from(HaskellSimpleEscapeMap.entries()).map(
     (x) => [x[1].charCodeAt(0), x[0]]));
 HaskellSimpleEscapeMap.set('0', '\0');
 HaskellSimpleEscapeMap.set("'", "'");
@@ -1384,6 +1386,89 @@ function toCodeHaskell(v) {
   return ret;
 }
 
+const RE2SimpleEscapeMap = new Map(
+  [...'ntvbrfa\"\\'].map((c) => [c, CSimpleEscapeMap.get(c)]));
+const ReverseRE2SimpleEscapeMap = new Map(
+  Array.from(RE2SimpleEscapeMap.entries()).map(
+    (x) => [x[1].charCodeAt(0), x[0]]));
+function toCodeRE2(v) {
+  let r = /((?:(?![\\\[\]{}.()?|&$^*+])[ -~])+)|([\uD800-\uDBFF][\uDC00-\uDFFF]|[^])/g;
+  let ret = '';
+  let m = null;
+  while (m = r.exec(v)) {
+    if (m[1]) {
+      ret += m[1];
+      continue;
+    }
+    let cp = m[2].codePointAt(0);
+    if (ReverseRE2SimpleEscapeMap.has(cp)) {
+      ret += '\\' + ReverseRE2SimpleEscapeMap.get(cp);
+      continue;
+    }
+    if ((cp > 32) && (cp < 126)) {
+      ret += '\\' + m[2];
+      continue;
+    }
+    if (cp < 256) {
+      ret += '\\x' + Number(cp).toString(16).padStart(2, '0');
+      continue;
+    }
+    ret += '\\x{' + Number(cp).toString(16) + '}';
+  }
+  return ret;
+}
+
+function fromCodeRE2(v) {
+  let ret = '';
+  let initial = v.match(/^([^"\\]*)/);
+  let m;
+  let r = /(?:\\(?:(?<simple>[ntvbrfa\"\\])|(?<meta>\W)|(?<octal>[0-7]{1,3})|(?<shorthex>x[0-9a-fA-F]{2})|(?<longhex>x\{[0-9a-fA-F]+})|(?<unfinishedhex>x)|(?<unk>[^])))(?<remainder>[^\\]*)/g;
+  ret = wtf8.encode(initial[1]);
+  r.lastIndex = initial[0].length;
+  while (r.lastIndex < v.length) {
+    let l = r.lastIndex;
+    m = r.exec(v);
+    if (!m || m.index != l) {
+      throw `Internal error at index ${l} of "${v}"`;
+    }
+    let g = m.groups;
+    if (g.simple) {
+      ret += wtf8.encode(RE2SimpleEscapeMap.get(g.simple));
+    }
+    if (g.meta) {
+      ret += wtf8.encode(g.meta);
+    }
+    if (g.octal) {
+      let ival = parseInt(g.octal, 8);
+      if (ival > 255) {
+        throw `\\${g.octal}: octal escape value > 255: ${ival}`;
+      }
+      ret += wtf8.encode(String.fromCharCode(ival));
+    }
+    if (g.shorthex) {
+      let ival = parseInt(g.shorthex.substring(1), 16);
+      ret += wtf8.encode(String.fromCharCode(ival));
+    }
+    if (g.longhex) {
+      let ival = parseInt(g.longhex.substring(2, g.longhex.length-1), 16);
+      if (ival > 0x10FFFF) {
+        throw `\\${g.longhex}: hex escape too large`
+      }
+      ret += wtf8.encode(String.fromCodePoint(ival));
+    }
+    if (g.unfinishedhex) {
+      throw "Unfinished or short \\x sequence";
+    }
+    if (g.unk) {
+      throw `\\${g.unk}: unknown escape sequence`;
+    }
+    if (g.remainder) {
+      ret += wtf8.encode(g.remainder);
+    }
+  }
+  return wtf8.decode(ret);
+}
+        
 function installHandlers() {
   function ancilary_changed(e) {
     let v = document.getElementById("haystack").value;
@@ -1465,14 +1550,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
   installHandlers();
 });
 window.addEventListener("load", function(event) {
-  chrome.runtime.sendMessage({ type: 'GetTarget' }, function(resp) {
+  chrome.runtime.sendMessage({ type: 'GetTargetf' }, function(resp) {
     if (typeof resp.data === 'string') {
       let data = resp.data;
       runRebuild(() => data, null, resp.e);
     } else {
-      chrome.runtime.getBackgroundPage(function (bWind) {
-        bWind.console.error(resp);
-      });
+      console.error("Got weird response: " + JSON.stringify(resp));
     }
   });
 });
@@ -1482,11 +1565,13 @@ var waitingCPPromises = new Map();
 var port = null;
 var disconnectTimeout = null;
 
-function connectPort() {
+async function connectPort() {
   if (port === null) {
-    //chrome.runtime.getBackgroundPage((p) => {p.console.log("opening port");});
+    await chrome.runtime.sendMessage({type: 'EnsureGetBlock'});
     port = chrome.runtime.connect({name: "namechannel"});
+    // console.info("Got port, I think: " + port + " at " + new Date());
     port.onMessage.addListener(function(msg) {
+      // console.info("Got port message in popup");
       if (msg.answers !== undefined) {
         for (let query in msg.answers) {
           let realquery = parseInt(query);
@@ -1499,20 +1584,23 @@ function connectPort() {
         }
       }
     });
-    port.onDisconnect.addListener(() => {port = null;});
+    port.onDisconnect.addListener(() => {
+      // console.info("Port disconnected in popup at " + new Date());
+      port = null;
+    });
   }
 }
 
 function disconnectPort() {
   if (port !== null) {
-    //chrome.runtime.getBackgroundPage((p) => {p.console.log("closing port");});
+    // console.info("About to disconnect port in popup at " + new Date());
     port.disconnect();
     port = null;
   }
 }
 
-function keepPortAlive() {
-  connectPort();
+async function keepPortAlive() {
+  let p = connectPort();
   if (disconnectTimeout) {
     window.clearTimeout(disconnectTimeout);
     disconnectTimeout = null;
@@ -1521,6 +1609,8 @@ function keepPortAlive() {
     disconnectPort();
     disconnectTimeout = null;
   }, 60 * 1000);
+  await p;
+  return port;
 }
 
 var scheduledQueryRun = null;
@@ -1532,8 +1622,7 @@ function scheduleQuery() {
         try {
           let queries = Array.from(waitingCPPromises.keys());
           if (queries) {
-            keepPortAlive();
-            port.postMessage({queries: queries});
+            keepPortAlive().then((p) => p.postMessage({queries: queries}));
           }
         } finally {
           scheduledQueryRun = null;

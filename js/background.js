@@ -1,5 +1,7 @@
 'use strict';
 
+importScripts('util.js', 'get_block.js');
+
 chrome.runtime.onInstalled.addListener(function() {
   actOnPrefs();
 });
@@ -8,8 +10,8 @@ function contextMenuListener(info, tab) {
   chrome.storage.local.set(
     {unistring: info.selectionText, justStorage: true, e: ''},
     function () {
-      if (chrome.browserAction.openPopup) {
-        chrome.browserAction.openPopup(
+      if (chrome.action.openPopup) {
+        chrome.action.openPopup(
           function(w) {
             if (!w) {
               chrome.storage.local.set({justStorage: false, e: ''});
@@ -24,19 +26,17 @@ function contextMenuListener(info, tab) {
 
 chrome.contextMenus.onClicked.addListener(contextMenuListener);
 
+function windowSelectionString() { return window.getSelection().toString(); }
+
 async function getCurrentTabSelection() {
-  var foundtabs = await apiToPromise1(
-    chrome.tabs.query, {active: true, currentWindow: true});
-  var sels = await apiToPromise1(
-    chrome.tabs.executeScript,
-    foundtabs[0].id,
-    {
-      code: 'window.getSelection().toString()',
-      allFrames: true
+  var foundtabs = await chrome.tabs.query({ active: true, lastFocusedWindow: true });
+  var sels = await chrome.scripting.executeScript({
+    target: {tabId: foundtabs[0].id, allFrames: true},
+    func: windowSelectionString,
     });
   for (let sel of sels) {
-    if (sel) {
-      return sel;
+    if (sel.result) {
+      return sel.result;
     }
   }
   return '';
@@ -46,9 +46,7 @@ async function getTarget(message, sender, sendResponse) {
   try {
     var storageError = '';
     try {
-      var items = await apiToPromise1(
-        (...v) => chrome.storage.local.get(...v),
-        {unistring: '', justStorage: false, e: ''});
+      var items = await chrome.storage.local.get({unistring: '', justStorage: false, e: ''});
     } catch (e) {
       storageError = e;
       items = {unistring: '', justStorage: false};
@@ -70,14 +68,13 @@ async function getTarget(message, sender, sendResponse) {
       }
     }
     if (items.justStorage) {
-      await apiToPromise1((...v) => chrome.storage.local.set(...v),
-                          {justStorage: false, e: ''});
+      await chrome.storage.local.set({justStorage: false, e: ''});
       fromStorage();
     } else {
       try {
         var sel = await getCurrentTabSelection();
         if (sel) {
-          sendResponse({data: sel});
+          sendResponse({type:"currentSelection", data: sel});
           return;
         }
         fromStorage();
@@ -90,9 +87,51 @@ async function getTarget(message, sender, sendResponse) {
   }
 }
 
+
+
+chrome.action.onClicked.addListener(browserActionListener);
+
+
+let creating; // A global promise to avoid concurrency issues
+async function setupOffscreenDocument(path) {
+  // Check all windows controlled by the service worker to see if one
+  // of them is the offscreen document with the given path
+  const offscreenUrl = chrome.runtime.getURL(path);
+  const existingContexts = await chrome.runtime.getContexts({
+    contextTypes: ['OFFSCREEN_DOCUMENT'],
+    documentUrls: [offscreenUrl]
+  });
+
+  if (existingContexts.length > 0) {
+    return;
+  }
+
+  // create offscreen document
+  if (creating) {
+    await creating;
+  } else {
+    // console.info(`Trying to load document at ${path} ...`);
+    creating = chrome.offscreen.createDocument({
+      url: path,
+      reasons: ['IFRAME_SCRIPTING'],
+      justification: 'Dynamically load only needed unicode blocks into memory',
+    });
+    await creating;
+    creating = null;
+  }
+}
+
+function ensureGetBlock(message, sender, sendResponse) {
+  setupOffscreenDocument('get_block.html').then(() => {sendResponse(true)});
+}
+
 function handleMessage(message, sender, sendResponse) {
-  if (message && message.type === "GetTarget") {
+  if (message && message.type === "GetTargetf") {
     getTarget(message, sender, sendResponse);
+    return true;
+  }
+  if (message && message.type == "EnsureGetBlock") {
+    ensureGetBlock(message, sender, sendResponse);
     return true;
   }
   return false;
@@ -105,36 +144,10 @@ async function browserActionListener(myTab) {
   var sel = '';
   try {
     sel = await getCurrentTabSelection();
-    await apiToPromise1((...v) => chrome.storage.local.set(...v),
-                        {unistring: sel, justStorage: true, e: ''});
+    await chrome.storage.local.set({unistring: sel, justStorage: true, e: ''});
   } catch (e) {
-    await apiToPromise1((...v) => chrome.storage.local.set(...v),
-                        {justStorage: true,
-                         e: e + '; falling back to last string'});
+    await chrome.storage.local.set({justStorage: true,
+                                    e: e + '; falling back to last string'});
   }
   window.open(chrome.runtime.getURL("popup.html"), '_blank');
 }
-
-chrome.browserAction.onClicked.addListener(browserActionListener);
-
-chrome.runtime.onConnect.addListener(function(port) {
-  console.assert(port.name == "namechannel",
-                 "Unknown port: " + JSON.stringify(port));
-  console.log("Port opened");
-  port.onMessage.addListener(function(msg) {
-    if (msg.queries !== undefined) {
-      async function doAnswer(queries) {
-        let answerpromises = queries.map(getNameBlock);
-        let answers = {};
-        for (let i = 0; i < answerpromises.length; i++) {
-          answers[queries[i]] = await answerpromises[i];
-        }
-        port.postMessage({answers: answers});
-      }
-      doAnswer(msg.queries);
-    }
-  });
-  port.onDisconnect.addListener(() => {
-    console.log("Port disconnected");
-  });
-});
