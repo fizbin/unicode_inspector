@@ -1,30 +1,11 @@
 'use strict';
 
-importScripts('util.js', 'get_block.js');
+importScripts('util.js');
 
 chrome.runtime.onInstalled.addListener(function() {
   actOnPrefs();
 });
 
-function contextMenuListener(info, tab) {
-  chrome.storage.local.set(
-    {unistring: info.selectionText, justStorage: true, e: ''},
-    function () {
-      if (chrome.action.openPopup) {
-        chrome.action.openPopup(
-          function(w) {
-            if (!w) {
-              chrome.storage.local.set({justStorage: false, e: ''});
-            }
-          }
-        );
-      } else {
-        window.open(chrome.runtime.getURL("popup.html"), '_blank');
-      };
-    });  
-}
-
-chrome.contextMenus.onClicked.addListener(contextMenuListener);
 
 function windowSelectionString() { return window.getSelection().toString(); }
 
@@ -87,10 +68,28 @@ async function getTarget(message, sender, sendResponse) {
   }
 }
 
+function contextMenuListener(info, tab) {
+  chrome.storage.local.set(
+    {unistring: info.selectionText, justStorage: true, e: ''},
+    function () {
+      if (chrome.action.openPopup) {
+        chrome.action.openPopup(
+          function(w) {
+            if (!w) {
+              chrome.storage.local.set({justStorage: false, e: ''});
+            }
+          }
+        );
+      } else {
+        window.open(chrome.runtime.getURL("popup.html"), '_blank');
+      };
+    });
+}
 
+chrome.contextMenus.onClicked.addListener(contextMenuListener);
 
-chrome.action.onClicked.addListener(browserActionListener);
-
+// All I ever do with alarms is close the offscreen document
+chrome.alarms.onAlarm.addListener((alarm) => {chrome.offscreen.closeDocument();});
 
 let creating; // A global promise to avoid concurrency issues
 async function setupOffscreenDocument(path) {
@@ -102,6 +101,9 @@ async function setupOffscreenDocument(path) {
     documentUrls: [offscreenUrl]
   });
 
+  chrome.alarms.create('close-offscreen', {
+    delayInMinutes: 5,
+  });
   if (existingContexts.length > 0) {
     return;
   }
@@ -149,5 +151,10 @@ async function browserActionListener(myTab) {
     await chrome.storage.local.set({justStorage: true,
                                     e: e + '; falling back to last string'});
   }
-  window.open(chrome.runtime.getURL("popup.html"), '_blank');
+
+  ensureGetBlock({}, '', () => {
+    chrome.runtime.sendMessage({type: "OpenPopup"});
+  });
 }
+
+chrome.action.onClicked.addListener(browserActionListener);

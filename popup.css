@@ -1,5 +1,6 @@
-@import url("block_hl.css");
-
+#diagholder {
+    min-height: 3em
+}
 .popup #openButton {
     display: initial;
 }
@@ -10,6 +11,10 @@
 
 .standalone #diagholder {
     font-size: 14px;
+}
+
+.hosted #prefsButton {
+    display: none;
 }
 
 div#diagholder {

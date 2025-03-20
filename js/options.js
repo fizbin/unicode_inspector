@@ -2,7 +2,7 @@
 function testCpInfoURL() {
   let cpInfoURL = document.getElementById('cpInfoURL').value;
   // U+1F63B: SMILING CAT FACE WITH HEART-SHAPED EYES
-  openForChar(String.fromCodePoint(0x1F63B), cpInfoURL);
+  (cpInfoFunc(String.fromCodePoint(0x1F63B)))(cpInfoURL);
 }
 
 function saveOptions() {

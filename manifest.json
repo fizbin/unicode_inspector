@@ -1,8 +1,8 @@
 {
   "name": "Unicode Inspector",
-  "version": "2.0",
+  "version": "2.0.1",
   "description": "Break down strings into unicode codepoints",
-  "permissions": ["contextMenus", "activeTab", "storage", "scripting", "offscreen"],
+  "permissions": ["contextMenus", "activeTab", "storage", "scripting", "offscreen", "alarms"],
   "background": {
     "service_worker": "js/background.js"
   },
@@ -27,7 +27,7 @@
     "128": "icons/unidecode128.png"
   },
   "content_security_policy": {
-    "extension_pages": "default-src 'self'"
+    "extension_pages": "default-src 'self'; style-src-attr 'unsafe-inline'"
   },
   "manifest_version": 3
 }

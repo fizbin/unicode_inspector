@@ -6,7 +6,7 @@ const prefDefaults = Object.freeze({
   cpInfoURL: 'https://www.compart.com/en/unicode/U+{cp.u}'
 });
 
-function openForChar(ch, infoTxt) {
+function cpInfoFunc(ch) {
   var cp = ch.codePointAt(0);
   var cpShortHex = cp.toString(16);
   var cp46Hex = cpShortHex.padStart(4, '0');
@@ -28,22 +28,23 @@ function openForChar(ch, infoTxt) {
       window.open(url, '_blank');
     }
   }
-  if (infoTxt) {
-    withCpInfoUrl(infoTxt);
-  } else {
-    chrome.storage.sync.get(
-      prefDefaults,
-      function (info) {
-        if (info.cpInfoURL) {
-          withCpInfoUrl(info.cpInfoURL);
-        } else {
-          var err = chrome.runtime.lastError;
-          chrome.runtime.getBackgroundPage(function (bWind) {
-            bWind.console.error(err.message);
-          });
-        }
-      });
-  }
+  return withCpInfoUrl;
+}
+
+function openForChar(ch) {
+  let withCpInfoUrl = cpInfoFunc(ch);
+  chrome.storage.sync.get(
+    prefDefaults,
+    function (info) {
+      if (info.cpInfoURL) {
+        withCpInfoUrl(info.cpInfoURL);
+      } else {
+        var err = chrome.runtime.lastError;
+        chrome.runtime.getBackgroundPage(function (bWind) {
+          bWind.console.error(err.message);
+        });
+      }
+    });
 }
 
 function contextMenuListener(info, tab) {

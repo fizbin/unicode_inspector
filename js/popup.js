@@ -48,7 +48,7 @@ async function rebuild(inVal, skipElem) {
     let ttRect = spanTT.getBoundingClientRect();
     let parentRect = spanTT.parentElement.getBoundingClientRect();
     let curStyle = window.getComputedStyle(spanTT);
-    
+
     if ((ttRect.right <= bodyRect.right) &&
         (ttRect.left > bodyRect.left) &&
         (parseFloat(curStyle['width'])
@@ -72,7 +72,7 @@ async function rebuild(inVal, skipElem) {
         newStyle += widthStyle;
         dealRight = dealLeft + spanTT.firstElementChild.offsetWidth + 12;
         spanTT.setAttribute("widthStyle", widthStyle);
-        changedStyle = true;        
+        changedStyle = true;
       } else {
         newStyle += spanTT.getAttribute("widthStyle");
       }
@@ -92,7 +92,7 @@ async function rebuild(inVal, skipElem) {
         newStyle += `left: ${cssLeft}px;`;
         changedStyle = true;
       }
-      
+
       let oldCssTop = parseFloat(parseFloat(curStyle['top']).toFixed(3));
       let cssTop = oldCssTop;
       baseAdjust = parentRect.bottom + 2 - ttRect.top;
@@ -597,11 +597,11 @@ function toCodeHTML(v) {
   return ret;
 }
 
-const ReverseXMLEscapes = new Map([[0x22, 'quot'],
-                                   [0x26, 'amp'],
-                                   [0x27, 'apos'],
-                                   [0x3C, 'lt'],
-                                   [0x3E, 'gt']]);
+const ReverseXMLEscapes = new Map([[0x22, '&quot;'],
+                                   [0x26, '&amp;'],
+                                   [0x27, '&apos;'],
+                                   [0x3C, '&lt;'],
+                                   [0x3E, '&gt;']]);
 
 function toCodeXML(v) {
   let r = /((?:(?!['"<>&])[ -~])+)|([\uD800-\uDBFF][\uDC00-\uDFFF]|[^])/g;
@@ -1468,7 +1468,7 @@ function fromCodeRE2(v) {
   }
   return wtf8.decode(ret);
 }
-        
+
 function installHandlers() {
   function ancilary_changed(e) {
     let v = document.getElementById("haystack").value;
