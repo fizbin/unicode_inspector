@@ -1,7 +1,7 @@
 UNIDATA = unidata/Jamo.txt unidata/Blocks.txt unidata/UnicodeData.txt
 TOP_LEVEL_EXTENSION_CONTENTS = \
   block_hl.css manifest.json options.html popup.css popup.html README \
-  LICENSE.txt
+  LICENSE.txt get_block.html
 
 .PHONY: all
 
@@ -24,4 +24,4 @@ unidebug.zip: js/get_block.js js/*.js unidebug.pem icons/* \
 	rm unidebug/key.pem
 
 clean:
-	rm -rf unidebug unidebug.zip js/[A-Z]*.js js/get_block.js unidata
+	rm -rf unidebug unidebug.zip js/BLOCK_*.js js/get_block.js unidata

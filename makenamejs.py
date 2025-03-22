@@ -92,7 +92,7 @@ function getFuncFor(mblock) {
     }
     newScript.onerror = scriptLoadErr;
     newScript.onload = scriptLoaded;
-    newScript.src = "js/" + mblock + ".js";
+    newScript.src = "js/BLOCK_" + mblock + ".js";
     document.head.appendChild(newScript);
     loading_promises.set(mblock, promise);
     return promise;
@@ -174,6 +174,6 @@ registerBlockFunc(%s, function(cp) {
 
 })();
 '''
-    with open('%s/%s.js' % (args.outdir, block_name_mangled), 'w') as f:
+    with open('%s/BLOCK_%s.js' % (args.outdir, block_name_mangled), 'w') as f:
         f.write(template % (pre_text, json.dumps(block_name_mangled),
                             func_body))
